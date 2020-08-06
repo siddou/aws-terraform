@@ -1,0 +1,8 @@
+.terraform
+terraform.tfstate*
+secret.tfvars
+plan.out*
+dev.out
+prod.out
+destroy.out
+.terraform.tfstate.lock.info
