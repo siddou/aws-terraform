@@ -33,11 +33,7 @@ terraform apply "dev.out"
 terraform plan -destroy -out destroy.out -var-file=dev.tfvars -var-file=secret.tfvars
 terraform apply "destroy.out"
 
-terraform plan -out dev.out -target=s3.tf -var-file=dev.tfvars -var-file=secret.tfvars
-terraform apply "dev.out"
 
-terraform plan -out dev.out -target=main.tf -var-file=dev.tfvars -var-file=secret.tfvars
-terraform apply "dev.out"
 
 ```
 
